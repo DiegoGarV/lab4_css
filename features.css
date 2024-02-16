@@ -1,0 +1,383 @@
+/* Fondo */
+body {
+    background-color: rgb(121,17,18);
+}
+
+.canva {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Puente */
+
+.bridge {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 300px;
+    width: 70px;
+    height: 20px;
+    background-color: rgb(236,190,49);
+    border-radius: 100% 150% 150% 100%;
+    transform: rotate(3deg);
+    border-top: 1px solid rgb(0,0,0);
+}
+
+.bridge::before {
+    content: '';
+    position: relative;
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(236,190,49);
+    border-radius: 10% 50% 100% 90%;
+    transform: rotate(-30deg);
+    left: 36px;
+    bottom: 5px;
+    border-top: 1px solid rgb(0,0,0);
+}
+
+.bridge::after {
+    content: '';
+    position: relative;
+    display: flex;
+    width: 20px;
+    height: 10px;
+    background-color: rgb(236,190,49);
+    transform: rotate(-5deg);
+    top: 1.19px;
+}
+
+.bridge_detail {
+    position: relative;
+    display: flex;
+    width: 22px;
+    height: 8px;
+    background-color: rgb(236,190,49);
+    transform: rotate(10deg);
+    left: 33px;
+    top: 314px; 
+}
+
+.bridge_detail::before {
+    content: '';
+    position: relative;
+    display: flex;
+    width: 50px;
+    height: 10px;
+    background-color: rgb(0,0,0);
+    transform: rotate(50deg);
+    right: 8px;
+    top: 6px;
+}
+
+.bridge_secret {
+    position: relative;
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(121,17,18);
+    transform: rotate(0deg);
+    left: 12.5px;
+    top: 304px;
+}
+
+/* Lente izquierdo */
+
+.left_glass {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 207px;
+    right: 110px;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(220, 100, 100,0);
+    border: 8px solid rgb(236,190,49);
+    border-radius: 470% 400%;
+}
+
+.left_glass::after {
+    content: '';
+    position: relative;
+    display: flex;
+    width: 12px;
+    height: 7px;
+    background-color: rgb(121,17,18);
+    transform: rotate(46deg);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    left: 2px;
+    bottom: 9.5px;
+}
+
+.l_glass_detail1 {
+    position: relative;
+    width: 142px;
+    height: 130px;
+    background-color: rgb(270, 270, 270, 0);
+    border-right: 3px solid rgb(121,17,18);
+    transform: rotate(-8deg);
+    border-radius: 470% 400%;
+    display: flex;
+    top: 68px;
+    right: 109px;
+}
+
+.l_glass_detail2 {
+    position: relative;
+    display: flex;
+    width: 155px;
+    height: 150px;
+    background-color: rgba(270, 270, 270, 0);
+    border-top: 2px solid rgb(121,17,18);
+    border-radius: 480% 370% 450% 370%;
+    top: -85px;
+    right: 112px;
+}
+
+.l_inside_glass {
+    position: relative;
+    display: flex;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(220, 100, 100,0.25);
+    top: -233px;
+    right: 110px;
+    border-radius: 470% 400%;
+}
+
+.lightning {
+    position: relative;
+    display: flex;
+    width: 100px;
+    height: 150px;
+    background-color: rgb(236,190,49);
+    right: 90px;
+    bottom: 407px; 
+    clip-path: polygon(35% 11%, 47% 16%, 41% 40%, 55% 34%, 39% 79%, 45% 45%, 29% 51%);
+    transition: background-color 0.5s ease;
+}
+
+/* Lente derecho */
+
+.right_glass {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    bottom: 541px;
+    left: 123px;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(220, 100, 100,0);
+    border: 8px solid rgb(236,190,49);
+    border-radius: 470% 400%;
+}
+
+.r_glass_detail {
+    position: relative;
+    width: 142px;
+    height: 130px;
+    background-color: rgb(270, 270, 270, 0);
+    border-right: 3px solid rgb(121,17,18);
+    transform: rotate(-8deg);
+    border-radius: 470% 400%;
+    display: flex;
+    bottom: 680px;
+    left: 127px;
+}
+
+.r_glass_detail::after {
+    content: '';
+    position: relative;
+    display: flex;
+    width: 500px;
+    height: 150px;
+    background-color: rgba(270, 270, 270, 0);
+    border-top: 2px solid rgb(121,17,18);
+    border-radius: 480% 370% 450% 370%;
+    transform: rotate(20deg);
+    bottom: 25px;
+    right: 8px;
+}
+
+.r_inside_glass {
+    position: relative;
+    display: flex;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(220, 100, 100,0.25);
+    bottom: 829px;
+    left: 123px;
+    border-radius: 470% 400%;
+}
+
+/* Pata derecha */
+
+.left_leg {
+    position: relative;
+    display: flex;
+    width: 180px;
+    height: 8px;
+    background-color: rgb(0,0,0);
+    border-top: 2px solid rgb(236,190,49);
+    transform: rotate(40deg);
+    left: 130px;
+    top: 340px; 
+}
+
+.left_leg::before {
+    content: '';
+    position: relative;
+    display: flex;
+    width: 30px;
+    height: 8px;
+    background-color: rgb(0,0,0);
+    transform: rotate(0deg);
+    right: 30px;
+    top: 0px; 
+}
+
+.l_leg_end {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 260px;
+    left: 22px;
+    width: 40px;
+    height: 15px;
+    background-color: rgb(0,0,0);
+    border-radius: 15% 100% 0% 15%;
+    transform: rotate(-48deg);
+}
+
+/* Pata izquierda */
+
+.r_leg_start {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    top: 365px;
+    right: 205px;
+    width: 40px;
+    height: 10px;
+    background-color: rgb(236,190,49);
+    border-radius: 15% 100% 100% 50%;
+    border-top: 2px solid rgb(0,0,0);
+}
+
+.r_leg_start::before {
+    content: '';
+    position: relative;
+    display: flex;
+    bottom: 6px;
+    right: 10px;
+    width: 20px;
+    height: 10px;
+    background-color: rgb(236,190,49);
+    border-radius: 15% 100% 100% 50%;
+    border-top: 2px solid rgb(0,0,0);
+    transform: rotate(50deg);
+}
+
+.r_leg_start::after {
+    content: '';
+    position: relative;
+    display: flex;
+    top: 0px;
+    right: 17px;
+    width: 20px;
+    height: 9px;
+    background-color: rgb(236,190,49);
+    border-radius: 15% 100% 100% 50%;
+    transform: rotate(0deg);
+}
+
+.right_leg {
+    position: relative;
+    display: flex;
+    width: 180px;
+    height: 8px;
+    background-color: rgb(236,190,49);
+    border-top: 2px solid rgb(0,0,0);
+    border-right: 1px solid rgb(0,0,0);
+    transform: rotate(52deg);
+    right: 286.5px;
+    top: 271px; 
+}
+
+.right_leg::before {
+    content: '';
+    position: relative;
+    display: flex;
+    width: 20.5px;
+    height: 7px;
+    background-color: rgb(0,0,0);
+    right: 20.5px;
+    top: 3px; 
+}
+
+.right_leg::after {
+    content: '';
+    position: relative;
+    display: flex;
+    width: 20px;
+    height: 8px;
+    background-color: rgb(0,0,0);
+    border-bottom: 2px solid rgb(121,17,18);
+    border-right: 1px solid rgb(121,17,18);
+    transform: rotate(0deg);
+    right: 41px;
+    bottom: 6px;
+}
+
+.r_leg_end {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 172px;
+    right: 369px;
+    width: 40px;
+    height: 15px;
+    background-color: rgb(0,0,0);
+    border-radius: 15% 100% 0% 15%;
+    transform: rotate(-38deg);
+}
+
+/* Sombras */
+
+.left_shadow {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    top: 590px;
+    left: 140px;
+    width: 150px;
+    height: 50px;
+    background-color: rgb(236,190,49,0);
+    border-radius: 50%;
+    border-top: 4px solid rgb(33, 31, 31);
+    transform: rotate(-10deg);
+}
+
+.right_shadow {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    top: 537px;
+    right: 100px;
+    width: 150px;
+    height: 50px;
+    background-color: rgb(236,190,49,0);
+    border-radius: 50%;
+    border-top: 4px solid rgb(33, 31, 31);
+    transform: rotate(-10deg);
+}
+
+/* Animaciones */
+.lightning:hover {
+    background-color: rgb(116,171,220);
+}
